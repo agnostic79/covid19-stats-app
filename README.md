@@ -2,7 +2,7 @@
 
 A small app providing stats per country about Covid 19 pandemic.
 
-### Previews
+### Preview
 
 ![App Preview](./preview/covid19-app-preview.png)
 
@@ -14,3 +14,7 @@ A small app providing stats per country about Covid 19 pandemic.
 - npm start
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Live demo
+https://synergie-bg.com/demo/covid19/ 
+
