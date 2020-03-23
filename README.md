@@ -9,7 +9,7 @@ A small app providing stats per country about Covid 19 pandemic.
 ### Instructions to start the app
 
 - clone repo
-- cd corona-app
+- cd covid19-stats-app
 - npm i
 - npm start
 
