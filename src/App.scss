@@ -1,0 +1,119 @@
+//Vars
+$color-bgr: #2c3e50;
+$color-text: #f1f1f1;
+$color-primary: #e74c3c;
+
+@mixin bebas() {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: $color-bgr;
+  color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    @include bebas;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 1rem 0 1.3rem;
+    display: inline-block;
+    padding: 1rem 1.2rem 0.8rem;
+    border: 7px solid $color-primary;
+    @media (max-width: 400px) {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.App__title {
+  padding: 1rem 0;
+}
+
+.App__body {
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  justify-content: space-around;
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.Stats {
+  width: 40%;
+  padding: 1.3rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: $color-primary;
+  color: $color-text;
+
+  @media (max-width: 600px) {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    @include bebas;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 1rem 0;
+  }
+
+  h3 {
+    line-height: 1.3;
+    margin: 4px 0;
+
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+.CountrySelect {
+  h2 {
+    line-height: 1;
+    margin-bottom: 0.7rem;
+  }
+  select {
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+    height: 3rem;
+    border: 2px solid $color-primary;
+
+    &:focus {
+      outline: 0;
+    }
+    @media (max-width: 400px) {
+      max-width: 90%;
+      margin: 0 auto 1.5rem;
+    }
+  }
+}
+
+.Footer {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  @media (max-width: 600px) {
+    margin-top: 0;
+    font-size: 12px;
+  }
+}
