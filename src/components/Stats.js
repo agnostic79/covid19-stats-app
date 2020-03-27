@@ -4,7 +4,6 @@ import useData from "../utils/useData";
 
 const Stats = ({ url, country }) => {
   const { data, loading, error } = useData(url);
-  console.log(data);
 
   return (
     <div className="Stats">
